@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Matthew Slowikowski's marketing portfolio, focused on sports and real estate.">
+  <title>Matthew Slowikowski | Portfolio</title>
+  <style>
+    :root { color-scheme: light; --ink:#202b35; --muted:#52616b; --accent:#8c3547; --paper:#fffdf9; --line:#e9dfd8; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:#f6f1eb; color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    .wrap { width:min(1050px,calc(100% - 40px)); margin:auto; }
+    header { background:var(--paper); border-bottom:1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:18px 0; }
+    .brand { font-weight:750; letter-spacing:.02em; text-decoration:none; color:var(--ink); }
+    .links { display:flex; gap:22px; flex-wrap:wrap; }
+    .links a { text-decoration:none; font-weight:600; }
+    .hero { padding:86px 0 80px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.17em; font-size:.78rem; font-weight:800; }
+    h1 { font-size:clamp(2.7rem,7vw,5.2rem); line-height:1.08; letter-spacing:-.055em; margin:12px 0 20px; }
+    .statement { max-width:760px; font-size:clamp(1.15rem,2.6vw,1.5rem); line-height:1.55; margin:0; }
+    .hero-note { color:var(--muted); margin-top:22px; }
+    section { padding:48px 0 70px; border-top:1px solid var(--line); }
+    h2 { font-size:2rem; letter-spacing:-.035em; margin:0 0 8px; }
+    .intro { color:var(--muted); max-width:650px; margin:0 0 24px; }
+    .skills { list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:12px; }
+    .skills li { background:var(--paper); border:1px solid var(--line); border-radius:100px; padding:10px 17px; font-weight:600; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(275px,1fr)); gap:18px; }
+    article { background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:26px; display:flex; flex-direction:column; }
+    article h3 { font-size:1.25rem; line-height:1.3; margin:0 0 10px; }
+    article p { margin:0 0 20px; color:var(--muted); }
+    .tag { color:var(--accent); font-size:.78rem; text-transform:uppercase; letter-spacing:.1em; font-weight:800; margin-bottom:12px; }
+    .project-link { margin-top:auto; font-weight:700; }
+    .link-note { font-size:.9rem; color:var(--muted); margin-top:20px; }
+    footer { padding:30px 0 50px; color:var(--muted); border-top:1px solid var(--line); }
+    @media(max-width:560px) { nav { align-items:flex-start; flex-direction:column; } .hero { padding:60px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">Matthew Slowikowski</a>
+      <div class="links">
+        <a href="#statement">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="hero" id="statement" aria-labelledby="page-title">
+      <span class="eyebrow">Marketing · Sports · Real Estate</span>
+      <h1 id="page-title">Hi, I'm Matthew.</h1>
+      <p class="statement">I'm a marketing major passionate about connecting people and brands through creative ideas, with a particular interest in the sports and real estate industries.</p>
+      <p class="hero-note">Explore my interests, developing skills, and projects below.</p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <p class="intro">Areas I am developing through my marketing coursework and projects.</p>
+      <ul class="skills">
+        <li>Market research</li>
+        <li>Brand strategy</li>
+        <li>Digital marketing</li>
+        <li>Audience analysis</li>
+        <li>Social media marketing</li>
+        <li>Communication</li>
+        <li>Presentation design</li>
+        <li>HTML &amp; CSS</li>
+      </ul>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected projects</h2>
+      <p class="intro">Work across sports marketing, real estate, and entrepreneurship.</p>
+
+      <div class="grid">
+        <article>
+          <span class="tag">Sports marketing</span>
+          <h3>Sports Advertising Campaign Redesign</h3>
+          <p>Analyzed a previous sports advertising campaign, identified opportunities to strengthen its message and audience appeal, and developed an updated campaign concept that built on the original strategy.</p>
+          <span class="project-link">Campaign materials available upon request</span>
+        </article>
+
+        <article>
+          <span class="tag">Real estate internship</span>
+          <h3>Real Estate Transaction Experience</h3>
+          <p>During an internship at a real estate firm, had the opportunity to participate in complex transactions and gain firsthand experience with the pace, collaboration, and decision making involved in real estate deals.</p>
+          <span class="project-link">Experience details available upon request</span>
+        </article>
+
+        <article>
+          <span class="tag">Entrepreneurship · Marketing</span>
+          <h3>Marketing Agency for Emerging Apps</h3>
+          <p>Founded a marketing agency to help new companies promote their apps. Worked with clients to build awareness, reach potential users, and increase interest in their products.</p>
+          <span class="project-link">Client work available upon request</span>
+        </article>
+      </div>
+
+      <p class="link-note">If you have public campaign materials, an agency website, or a case study, add a link using &lt;a href="YOUR_PROJECT_URL"&gt;View project&lt;/a&gt;.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Matthew Slowikowski</div>
+  </footer>
+</body>
+</html>
